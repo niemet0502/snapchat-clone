@@ -10,7 +10,7 @@ git clone https://github.com/niemet0502/snapchat-clone.git
 * Change directory to the project
 
 ```bash
-cd twitter-clone
+cd snapchat-clone
 ```
 
 * Install dependencies
