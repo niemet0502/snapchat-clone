@@ -5,7 +5,7 @@ import { setCameraImage } from "./features/cameraSlice"
 import { useDispatch } from "react-redux"
 import { useHistory } from "react-router-dom"
 const videoContraints = {
-  width: 850,
+  width: 350,
   height: 400,
   facingMode: "user"
 };
@@ -32,14 +32,13 @@ function WebcamCapture(){
         screenshotFormat="image/jpeg"
         width={videoContraints.width}
         videoContraints={videoContraints}
+        forceScreenshotSourceSize="true"
       />
       <RadioButtonUncheckedIcon
         class="webcamCapture_button"
         onClick={capture}
         fontSize="large"
       />
-
-      <img class="capture_image" src={image} alt=""/>
   </div>
 }
 
