@@ -1,12 +1,14 @@
 import React from 'react'
 import { useSelector } from "react-redux"
 import { selectCameraImage } from "./features/cameraSlice"
+import "./Preview.css"
 
 function Preview() {
-  const cameraImage = useSelector()
+  const cameraImage = useSelector(selectCameraImage)
   return (
     <div className="preview">
-      <img src="" alt=""/>
+      <h2>Preview</h2>
+      <img src={cameraImage} alt=""/>
     </div>
   )
 }
