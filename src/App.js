@@ -14,7 +14,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/preview">
-            
+            <Preview />
           </Route>
           <Route path="/">
             <WebcamCapture />
